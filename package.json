@@ -1,5 +1,5 @@
 {
-  "name": "rails_new",
+  "name": "openqueue",
   "private": true,
   "engines": {
     "node": "^12.16.1",
