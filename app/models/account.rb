@@ -6,7 +6,7 @@ class Account < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :authenticatable, polymorphic: true
+  # belongs_to :authenticatable, polymorphic: true
 
   private
 

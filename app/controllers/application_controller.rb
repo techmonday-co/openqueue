@@ -34,7 +34,8 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user ||= current_account&.authenticatable
+    # @current_user ||= current_account&.authenticatable
+    @current_user ||= current_account
   end
 
   def set_raven_context
