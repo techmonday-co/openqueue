@@ -23,7 +23,7 @@ services:
     environment:
       - RAILS_SERVE_STATIC_FILES=true
       - HOST=http://localhost:3000
-      - DATABASE_URL=postgres://postgres@postgres:5432/railsnew_production
+      - DATABASE_URL=postgres://postgres@postgres:5432/openqueue_production
 
 volumes:
   redis:

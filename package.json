@@ -1,5 +1,5 @@
 {
-  "name": "rails_new",
+  "name": "openqueue",
   "private": true,
   "engines": {
     "yarn": ">=1.9.0"

@@ -41,6 +41,7 @@ Rails.application.configure do
 
   # Review emails in the browser instead of the logs
   config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.perform_deliveries = true
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
