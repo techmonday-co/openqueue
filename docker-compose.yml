@@ -17,14 +17,14 @@ services:
       - 'postgres'
       - 'redis'
     build: .
-    command: ['foreman', 'start', '-f', 'Procfile.docker']
+    command: ['bundle', 'exec', 'puma', '-C', 'config/puma.rb']
     ports:
-      - '3000:5000'
-    volumes:
-      - 'gems_cache:/gems'
-      - '.:/app'
+      - '3000:3000'
+    environment:
+      - RAILS_SERVE_STATIC_FILES=true
+      - HOST=http://localhost:3000
+      - DATABASE_URL=postgres://postgres@postgres:5432/railsnew_production
 
 volumes:
-  gems_cache:
   redis:
   postgres:

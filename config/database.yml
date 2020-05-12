@@ -21,6 +21,8 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   # TODO: Configure DATABASE_URL in config/application.yml
   url: <%= ENV["DATABASE_URL"] %>
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
   # NOTE: In some cases we'll use RAILS_MAX_THREADS as the sidekiq concurrency.
   # Indeed, sidekiq will use this value internally by default if it is set and
   # concurrency isn't explicitly configured. However, this means the worker
